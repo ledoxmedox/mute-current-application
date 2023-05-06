@@ -1,7 +1,10 @@
 ; #Include E:\ahk\VA.ahk
 #Include VA.ahk
+#Include systray_uwp_volume_mixer.ahk
+#Include whitelist_exe.ahk
 
-F1::  ; F1 hotkey - toggle mute state of active window
+; F1::  ; F1 hotkey - toggle mute state of active window
+^`::  ; ctrl+` hotkey - toggle mute state of active window
   WinGet, ActivePid, PID, A
   if !(Volume := GetVolumeObject(ActivePid))
     MsgBox, There was a problem retrieving the application volume interface
