@@ -4,7 +4,7 @@
 #Include whitelist_exe.ahk
 
 ; F1::  ; F1 hotkey - toggle mute state of active window
-^`::  ; ctrl+` hotkey - toggle mute state of active window
+^Esc::  ; ctrl+` hotkey - toggle mute state of active window
   WinGet, ActivePid, PID, A
   if !(Volume := GetVolumeObject(ActivePid))
     MsgBox, There was a problem retrieving the application volume interface
