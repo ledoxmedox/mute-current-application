@@ -2,6 +2,7 @@
 #Include VA.ahk
 #Include systray_uwp_volume_mixer.ahk
 #Include whitelist_exe.ahk
+#Include replace_menukey.ahk
 
 ; F1::  ; F1 hotkey - toggle mute state of active window
 ^Esc::  ; ctrl+` hotkey - toggle mute state of active window
